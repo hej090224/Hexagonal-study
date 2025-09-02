@@ -1,10 +1,10 @@
-package com.example.HCBC;
+package com.example.HexagonalStudy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HcbcApplicationTests {
+class HexagoanlStudyApllicationTests {
 
     @Test
     void contextLoads() {
