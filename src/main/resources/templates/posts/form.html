@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Post Form</title></head>
+<body>
+<h1 th:if="${post.id == null}">New Post</h1>
+<h1 th:if="${post.id != null}">Edit Post</h1>
+
+<!-- 새 글 작성 -->
+<form th:action="@{/posts}" th:if="${post.id == null}" th:object="${post}" method="post">
+    <div><label>Title: <input type="text" th:field="*{title}" /></label></div>
+    <div><label>Author: <input type="text" th:field="*{author}" /></label></div>
+    <div><label>Content: <textarea th:field="*{content}"></textarea></label></div>
+    <div><button type="submit">Save</button></div>
+</form>
+
+<!-- 기존 글 수정 -->
+<form th:action="@{/posts/{id}(id=${post.id})}" th:if="${post.id != null}" th:object="${post}" method="post">
+    <div><label>Title: <input type="text" th:field="*{title}" /></label></div>
+    <div><label>Author: <input type="text" th:field="*{author}" /></label></div>
+    <div><label>Content: <textarea th:field="*{content}"></textarea></label></div>
+    <div><button type="submit">Update</button></div>
+</form>
+
+<a th:href="@{/posts}">Back to list</a>
+</body>
+</html>
