@@ -1,4 +1,10 @@
 package domain.port.in;
 
-public class AuthUseCase {
+import domain.model.UserAccount;
+
+import java.util.Optional;
+
+public interface AuthUseCase {
+    Optional<UserAccount> findByUsername(String username);
+    UserAccount register(UserAccount user);
 }
