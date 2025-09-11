@@ -1,6 +1,6 @@
-package adapter.out.persistence;
+package com.example.HexagonalStudy.adapter.out.persistence;
 
-import domain.model.UserAccount;
+import com.example.HexagonalStudy.domain.model.UserAccount;
 import jakarta.persistence.*;
 
 import java.util.Set;
@@ -20,7 +20,10 @@ public class JpaUserEntity {
     protected JpaUserEntity() {}
 
     public JpaUserEntity(Long id, String username, String password, Set<String> roles) {
-        this.id = id; this.username = username; this.password = password; this.roles = roles;
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.roles = roles;
     }
 
     public static JpaUserEntity fromDomain(UserAccount user) {

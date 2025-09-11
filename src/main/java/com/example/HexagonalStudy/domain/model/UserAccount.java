@@ -1,4 +1,4 @@
-package domain.model;
+package com.example.HexagonalStudy.domain.model;
 
 import java.util.Set;
 

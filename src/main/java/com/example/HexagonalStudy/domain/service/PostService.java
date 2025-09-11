@@ -1,8 +1,8 @@
-package domain.service;
+package com.example.HexagonalStudy.domain.service;
 
-import domain.model.Post;
-import domain.port.in.PostUseCase;
-import domain.port.out.PostRepository;
+import com.example.HexagonalStudy.domain.model.Post;
+import com.example.HexagonalStudy.domain.port.in.PostUseCase;
+import com.example.HexagonalStudy.domain.port.out.PostRepository;
 
 import java.util.List;
 import java.util.Optional;

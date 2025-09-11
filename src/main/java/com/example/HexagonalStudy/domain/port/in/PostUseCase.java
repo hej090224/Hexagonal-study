@@ -1,6 +1,6 @@
-package domain.port.in;
+package com.example.HexagonalStudy.domain.port.in;
 
-import domain.model.Post;
+import com.example.HexagonalStudy.domain.model.Post;
 
 import java.util.List;
 import java.util.Optional;

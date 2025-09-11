@@ -1,8 +1,8 @@
-package domain.service;
+package com.example.HexagonalStudy.domain.service;
 
-import domain.port.in.AuthUseCase;
-import domain.model.UserAccount;
-import domain.port.out.UserRepository;
+import com.example.HexagonalStudy.domain.port.in.AuthUseCase;
+import com.example.HexagonalStudy.domain.model.UserAccount;
+import com.example.HexagonalStudy.domain.port.out.UserRepository;
 
 import java.util.Optional;
 

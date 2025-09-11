@@ -1,7 +1,7 @@
-package adapter.out.persistence;
+package com.example.HexagonalStudy.adapter.out.persistence;
 
-import domain.port.out.UserRepository;
-import domain.model.UserAccount;
+import com.example.HexagonalStudy.domain.port.out.UserRepository;
+import com.example.HexagonalStudy.domain.model.UserAccount;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;

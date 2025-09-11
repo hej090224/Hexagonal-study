@@ -1,4 +1,4 @@
-package domain.model;
+package com.example.HexagonalStudy.domain.model;
 
 public class Post {
 
@@ -10,7 +10,10 @@ public class Post {
     public Post() {}
 
     public Post(Long id, String title, String content, String author) {
-        this.id = id; this.title = title; this.content = content; this.author = author;
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.author = author;
     }
 
     public Long getId() { return id; }

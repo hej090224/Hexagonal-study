@@ -1,7 +1,7 @@
-package adapter.out.persistence;
+package com.example.HexagonalStudy.adapter.out.persistence;
 
-import domain.model.Post;
-import domain.port.out.PostRepository;
+import com.example.HexagonalStudy.domain.model.Post;
+import com.example.HexagonalStudy.domain.port.out.PostRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package adapter.in.web;
+package com.example.HexagonalStudy.adapter.in.web;
 
-import domain.model.Post;
-import domain.port.in.PostUseCase;
+import com.example.HexagonalStudy.domain.model.Post;
+import com.example.HexagonalStudy.domain.port.in.PostUseCase;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

@@ -1,13 +1,11 @@
-package config;
+package com.example.HexagonalStudy.config;
 
-import adapter.out.persistence.JpaPostRepositoryAdapter;
-import adapter.out.persistence.JpaUserRepositoryAdapter;
-import domain.port.in.AuthUseCase;
-import domain.port.in.PostUseCase;
-import domain.port.out.PostRepository;
-import domain.port.out.UserRepository;
-import domain.service.AuthService;
-import domain.service.PostService;
+import com.example.HexagonalStudy.domain.port.in.AuthUseCase;
+import com.example.HexagonalStudy.domain.port.in.PostUseCase;
+import com.example.HexagonalStudy.domain.port.out.PostRepository;
+import com.example.HexagonalStudy.domain.port.out.UserRepository;
+import com.example.HexagonalStudy.domain.service.AuthService;
+import com.example.HexagonalStudy.domain.service.PostService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

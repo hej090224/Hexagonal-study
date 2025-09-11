@@ -1,6 +1,6 @@
-package adapter.out.persistence;
+package com.example.HexagonalStudy.adapter.out.persistence;
 
-import domain.model.Post;
+import com.example.HexagonalStudy.domain.model.Post;
 import jakarta.persistence.*;
 
 @Entity
