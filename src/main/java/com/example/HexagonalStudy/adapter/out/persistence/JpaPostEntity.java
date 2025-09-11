@@ -16,7 +16,10 @@ public class JpaPostEntity {
     protected JpaPostEntity() {}
 
     public JpaPostEntity(Long id, String title, String content, String author) {
-        this.id = id; this.title = title; this.content = content; this.author = author;
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.author = author;
     }
 
     public static JpaPostEntity fromDomain(Post p) {
