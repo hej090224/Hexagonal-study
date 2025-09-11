@@ -40,13 +40,13 @@ public class PostController {
         return "posts/form";
     }
 
-    @PostMapping("/{id}")
+    @PatchMapping("/{id}")
     public String update(@PathVariable Long id, @ModelAttribute Post post) {
         postUseCase.updatePost(id, post);
         return "redirect:/posts";
     }
 
-    @PostMapping("/{id}/delete")
+    @DeleteMapping("/{id}/delete")
     public String delete(@PathVariable Long id) {
         postUseCase.deletePost(id);
         return "redirect:/posts";
