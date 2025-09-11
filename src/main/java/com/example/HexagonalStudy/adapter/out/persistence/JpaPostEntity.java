@@ -16,7 +16,10 @@ public class JpaPostEntity {
     protected JpaPostEntity() {}
 
     public JpaPostEntity(Long id, String title, String content, String author) {
-        this.id = id; this.title = title; this.content = content; this.author = author;
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.author = author;
     }
 
     public static JpaPostEntity fromDomain(Post p) {
@@ -32,7 +35,7 @@ public class JpaPostEntity {
     public String getContent() {return content;}
     public String getAuthor() {return author;}
     public void setId(Long id) { this.id = id;}
-    public void setTitle(String t) {this.title = title = t;}
-    public void setContent(String c) { this.content = c;}
-    public void setAuthor(String a) {this.author = a;}
+    public void setTitle(String t) {this.title = title;}
+    public void setContent(String c) { this.content = content;}
+    public void setAuthor(String a) {this.author = author;}
 }
